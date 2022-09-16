@@ -8,10 +8,10 @@ class SplashActivity : BaseActivity<SplashPresenter>(), SplashContract.SplashVie
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        presenter.xyx()
+        presenter.getPageData()
     }
 
-    override fun getData() {
+    override fun onPageDataSuccess() {
 
     }
 
@@ -26,6 +26,4 @@ class SplashActivity : BaseActivity<SplashPresenter>(), SplashContract.SplashVie
     override fun showToast(res: Int) {
 
     }
-
-
 }

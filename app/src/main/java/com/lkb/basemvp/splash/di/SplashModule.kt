@@ -1,6 +1,6 @@
 package com.lkb.basemvp.splash.di
 
-import com.lkb.basemvp.SplashRepository
+import com.lkb.basemvp.repo.SplashRepository
 import com.lkb.basemvp.splash.SplashContract
 import com.lkb.basemvp.splash.SplashPresenter
 import dagger.Module

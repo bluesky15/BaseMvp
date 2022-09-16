@@ -2,12 +2,15 @@ package com.lkb.basemvp.splash
 
 import android.util.Log
 import com.lkb.basemvp.Presenter
-import com.lkb.basemvp.SplashRepository
+import com.lkb.basemvp.repo.SplashRepository
 
-class SplashPresenter(view: SplashContract.SplashView, repository: SplashRepository) :
-    Presenter<SplashContract.SplashView, SplashRepository>(view, repository) {
+typealias SplashView = SplashContract.SplashView
 
-    fun xyx() {
+class SplashPresenter(view: SplashView, repository: SplashRepository) :
+    Presenter<SplashView, SplashRepository>(view, repository) {
+    fun getPageData() {
+        view?.onPageDataSuccess()
         Log.d(">>>", "method executed");
     }
+
 }

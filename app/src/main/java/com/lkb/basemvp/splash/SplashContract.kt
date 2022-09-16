@@ -5,7 +5,7 @@ import com.lkb.basemvp.View
 
 interface SplashContract {
     interface SplashView:View{
-        fun getData()
+        fun onPageDataSuccess()
     }
     interface Presenter{
        fun logOutUser()
